@@ -55,7 +55,7 @@ class node:
         if self.col > 0  and not grid[self.row ][self.col - 1].color == BLACK: #checks neighbor one block up left
             self.neighbors.append(grid[self.row ][self.col -1])
 
-
+# Calculates shortest estimated distance
 def heuristic(point_1,point_2):
     x1, y1 = point_1
     x2, y2 = point_2
